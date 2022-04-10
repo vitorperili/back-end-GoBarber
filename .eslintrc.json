@@ -18,8 +18,17 @@
     "prettier"
   ],
   "rules": {
-    "class-methods-use-this": "off",
     "no-use-before-define": "off",
+    "no-underscore-dangle": "off",
+    "prettier/prettier": "error",
+    "class-methods-use-this": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "_"
+      }
+    ],
     "@typescript-eslint/no-use-before-define": [
       "error"
     ],
@@ -30,7 +39,6 @@
         "ts": "never"
       }
     ],
-    "prettier/prettier": "error"
   },
   "settings": {
     "import/resolver": {
